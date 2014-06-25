@@ -2,21 +2,21 @@
 
 Nome do Projeto:Site Pessoal 
 Autor: Lucas Vinicius Periera
-Data criaçao: 24/06/2014
+Data criaï¿½ao: 25/06/2014
 
 ***************************************
 
-Resumo: Criação de um site pessoal
+Resumo: Criaï¿½ï¿½o de um site pessoal
 
 ***************************************
 
-Cliente: Site próprio
+Cliente: Site prï¿½prio
 
 ***************************************
 
-Objetivo: Mostrar meus trabalhos acadêmicos,
+Objetivo: Mostrar meus trabalhos acadï¿½micos,
 	  portifolios e ajudar postando artigos
- 	  e códigos no desenvolvimento.
+ 	  e cï¿½digos no desenvolvimento.
 
 ***************************************
 
@@ -32,4 +32,4 @@ Sem nenhum intuito de receber recurso financeiros.
 
 ***************************************
 
-Todos os direitos são reservados á Lucas Vinicius.
+Todos os direitos sï¿½o reservados ï¿½ Lucas Vinicius.
