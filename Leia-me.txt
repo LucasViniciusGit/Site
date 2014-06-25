@@ -1,1 +1,35 @@
-Arquivo teste para o git hub
+************** Leia-me ****************
+
+Nome do Projeto:Site Pessoal 
+Autor: Lucas Vinicius Periera
+Data criaçao: 24/06/2014
+
+***************************************
+
+Resumo: Criação de um site pessoal
+
+***************************************
+
+Cliente: Site próprio
+
+***************************************
+
+Objetivo: Mostrar meus trabalhos acadêmicos,
+	  portifolios e ajudar postando artigos
+ 	  e códigos no desenvolvimento.
+
+***************************************
+
+Ferramentas: Html, Css, Java Script, php
+
+***************************************
+
+Frameworks: Bootsratp, jquery, *plugins jquery.
+
+***************************************
+
+Sem nenhum intuito de receber recurso financeiros.
+
+***************************************
+
+Todos os direitos são reservados á Lucas Vinicius.
