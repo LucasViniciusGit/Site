@@ -1,0 +1,21 @@
+Options +FollowSymLinks
+RewriteBase /
+#Regra do servidor para funcionar todas as regras 
+
+Options -Indexes
+#Bloquear listagem de diretórios
+
+DirectoryIndex Index.html
+#Redirecionando para página inicial
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(lucasvinicius\.besaba\.com)(:80)? [NC]
+RewriteRule ^(.*) http://www.lucasvinicius.besaba.com/$1 [R=301,L]
+order deny,allow
+#Coloca o www na frente do site
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
+#Remove a extensão html do arquivo
