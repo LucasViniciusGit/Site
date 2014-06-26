@@ -1,4 +1,4 @@
-************** Leia-me ****************
+﻿************** Leia-me ****************
 
 Nome do Projeto:Site Pessoal 
 Autor: Lucas Vinicius Periera
@@ -6,7 +6,7 @@ Data cria�ao: 25/06/2014
 
 ***************************************
 
-Resumo: Cria��o de um site pessoal
+Resumo: Criado de um site pessoal
 
 ***************************************
 
@@ -16,7 +16,7 @@ Cliente: Site pr�prio
 
 Objetivo: Mostrar meus trabalhos acad�micos,
 	  portifolios e ajudar postando artigos
- 	  e c�digos no desenvolvimento.
+ 	  e codigos no desenvolvimento.
 
 ***************************************
 
@@ -28,8 +28,8 @@ Frameworks: Bootsratp, jquery, *plugins jquery.
 
 ***************************************
 
-Sem nenhum intuito de receber recurso financeiros.
+Nenhum intuito de receber recurso financeiros.
 
 ***************************************
 
-Todos os direitos s�o reservados � Lucas Vinicius.
+Todos os direitos reservados � Lucas Vinicius.
