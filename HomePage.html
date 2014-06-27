@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt" >
 <head>
     <title>Inicial - Perfil Profissional</title>
     <meta charset="UTF-8" />
-    <meta http-equiv="content-language" content="pt" />
     <meta name="author" content="Lucas Vinicius Pereira" />
     <meta name="keywords" content="lucas vinicius, site, pessoal, perfil, profissional" />
     <meta name="description" content="Apresentação do perfil profissional, apresentando todos os trabalhos desenvolvidos junto com portfólios e tutorias sobre as técnicas e tecnologias utilizadas no mercado atual." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /> -->
-   
+
     <!--Importano o Css -->
     <link rel="shortcut icon" href="Archives/img/icon.jpg" />
     <link rel="stylesheet" href="Archives/css/bootstrap.min.css" />
@@ -26,81 +25,67 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      <![endif]-->
 </head>
-<body onload="setdate(); SetIdade();">
+<body onload="setdate(); SetIdade(); ">
 
 <nav class="navbar navbar-inverse navbar-fixed-top nav-custom" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-        <a class="navbar-brand legenda-bottom" href="#" title="Sobre Lucas Vinicius">
-            <span class="fa fa-user"></span>&nbsp&nbspLucas Vinicius
-        </a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a class="link-footer" href="../Site-Pessoal/Curriculo.html">Currículo</a></li>
-        <li><a class="link-footer" href="../Site-Pessoal/Portifolio.html">Portifolio</a></li>
-        <li><a class="link-footer" href="../Site-Pessoal/Tutoriais.html">Tutoriais</a></li>
-        <li><a class="link-footer" href="../Site-Pessoal/Contato.html">Contato</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="clearfix content-sub-menu">
     <div class="container">
-         <img class="img-responsive  margin-top-0 left" alt="" src="Archives/img/logo.png" />
-         <h3 id="lblSetDate" class="clearfix right margin-top-1"></h3>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand legenda-bottom" href="#" title="Sobre Lucas Vinicius">
+                <span class="fa fa-user"></span>&nbsp;&nbsp;Lucas Vinicius
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a class="link-footer" href="../Site-Pessoal/Curriculo.html">Currículo</a></li>
+            <li><a class="link-footer" href="../Site-Pessoal/Portifolio.html">Portifolio</a></li>
+            <li><a class="link-footer" href="../Site-Pessoal/Tutoriais.html">Tutoriais</a></li>
+            <li><a class="link-footer" href="../Site-Pessoal/Contato.html">Contato</a></li>
+        </ul>
+        </div>
     </div>
+</nav>
+<div class="Jcarousel" >
+    <center>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="10000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img  src="../Site-Pessoal/Archives/img/box-microsoft.png" alt="Microsoft">
+                </div>
+                <div class="item">
+                    <img src="../Site-Pessoal/Archives/img/box-java.png" alt="Java">
+                </div>
+                <div class="item">
+                    <img src="../Site-Pessoal/Archives/img/box-php.png" alt="PHP">
+                </div>
+                <div class="item">
+                    <img src="../Site-Pessoal/Archives/img/box-html-css.png" alt="HTML + CSS">
+                </div>
+                <div class="item">
+                    <img src="../Site-Pessoal/Archives/img/box-jquery.png" alt="Jquery">
+                </div>
+            </div>
+        </div>
+    </center>
 </div>
 
 <div class="container font padding-top">
-    <br />
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="10000">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img  src="../Site-Pessoal/Archives/img/box-microsoft.png" alt="Microsoft">
-            </div>
-            <div class="item">
-                <img src="../Site-Pessoal/Archives/img/box-java.png" alt="Java">
-            </div>
-            <div class="item">
-                <img src="../Site-Pessoal/Archives/img/box-php.png" alt="PHP">
-            </div>
-            <div class="item">
-                <img src="../Site-Pessoal/Archives/img/box-html-css.png" alt="HTML + CSS">
-            </div>
-            <div class="item">
-                <img src="../Site-Pessoal/Archives/img/box-jquery.png" alt="Jquery">
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-    </div>
     <br />
     <div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu adipiscing turpis. Quisque ut mollis augue, at commodo mi. Integer nunc diam, lobortis ut fringilla a, vestibulum quis quam. Nulla hendrerit lectus at nisl lacinia, interdum varius erat dictum. Nullam consectetur gravida lorem. In vel felis odio. Sed iaculis velit a felis euismod accumsan. Nam aliquet justo dignissim, vulputate tortor nec, tincidunt magna. Nunc at dolor vitae nunc euismod fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec eu risus in orci consectetur pharetra. Nunc at erat sodales, rutrum arcu faucibus, consectetur eros. Morbi urna orci, convallis vel felis et, imperdiet gravida mi. Cras semper libero ac tellus consequat condimentum.</p>
@@ -121,16 +106,16 @@
     </div>
 
     <!-- Modal Facebook -->
-    <div class="modal fade" id="ModalFacebook" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="ModalFacebook" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel"><i class="fa fa-facebook-square"></i>&nbsp&nbspPerfil Facebook</h4>
+                    <h4 class="modal-title" id="myModalLabel1"><i class="fa fa-facebook-square"></i>&nbsp;&nbsp;Perfil Facebook</h4>
                 </div>
                 <div class="modal-body">
                     <div class="col-md-3 left">
-                            <img src="../Site-Pessoal/Archives/img/perfil.jpg" alt="Perfil Facebook - Lucas Vinicius" class="img-circle">
+                        <img src="../Site-Pessoal/Archives/img/perfil.jpg" alt="Perfil Facebook - Lucas Vinicius" class="img-circle">
                     </div>
                     <div class="row ">
                         <div class="col-md-8 left-bar">
@@ -143,7 +128,7 @@
                         </div>
                         <div class="col-md-8 left-bar" >
                             <b>Idade: </b>
-                             <span id="setIdade"></span>
+                            <span id="setIdade"></span>
                         </div>
                     </div>
                 </div>
@@ -155,16 +140,16 @@
     </div><!-- Facebook -->
 
     <!-- Modal Twitter -->
-    <div class="modal fade" id="ModalTwitter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="ModalTwitter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel"><i class="fa fa-twitter-square"></i>&nbsp&nbspTwitter</h4>
+                    <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-twitter-square"></i>&nbsp;&nbsp;Twitter</h4>
                 </div>
                 <div class="modal-body">
                     <div class="col-md-3 left">
-                            <img src="../Site-Pessoal/Archives/img/rs-twitter.png" alt="Perfil Twitter - Lucas Vinicius" class="img-circle">
+                        <img src="../Site-Pessoal/Archives/img/rs-twitter.png" alt="Perfil Twitter - Lucas Vinicius" class="img-circle">
                     </div>
                     <div class="row ">
                         <div class="col-md-8 left-bar">
@@ -185,16 +170,16 @@
     </div><!-- Twitter -->
 
     <!-- Modal Skype -->
-    <div class="modal fade" id="ModalSkype" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="ModalSkype" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel"><i class="fa fa-skype"></i>&nbsp&nbspSkype</h4>
+                    <h4 class="modal-title" id="myModalLabel3"><i class="fa fa-skype"></i>&nbsp;&nbsp;Skype</h4>
                 </div>
                 <div class="modal-body">
                     <div class="col-md-3 left">
-                            <img src="../Site-Pessoal/Archives/img/rs-skype.png" alt="Perfil Skype - Lucas Vinicius" class="img-circle">
+                        <img src="../Site-Pessoal/Archives/img/rs-skype.png" alt="Perfil Skype - Lucas Vinicius" class="img-circle">
                     </div>
                     <div class="row ">
                         <div class="col-md-8 left-bar">
@@ -215,16 +200,16 @@
     </div><!-- Skype -->
 
     <!-- Modal Linkedin -->
-    <div class="modal fade" id="ModalLinkedin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="ModalLinkedin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel"><i class="fa fa-linkedin-square"></i>&nbsp&nbspPerfil Linkedin</h4>
+                    <h4 class="modal-title" id="myModalLabel4"><i class="fa fa-linkedin-square"></i>&nbsp;&nbsp;Perfil Linkedin</h4>
                 </div>
                 <div class="modal-body">
                     <div class="col-md-3 left">
-                            <img src="../Site-Pessoal/Archives/img/perfil.jpg" alt="Perfil Linkedin - Lucas Vinicius" class="img-circle">
+                        <img src="../Site-Pessoal/Archives/img/perfil.jpg" alt="Perfil Linkedin - Lucas Vinicius" class="img-circle">
                     </div>
                     <div class="row ">
                         <div class="col-md-8 left-bar">
@@ -243,7 +228,7 @@
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div><!-- Linkedin -->
-   
+
 </div><!-- End Container -->
 
 <div id="footer">
@@ -258,46 +243,46 @@
             </div>
         </div>
         <div class="row">
-             <div class="col-md-6 col-md-offset-6 color-white">
-                <a data-toggle="modal" data-target="#ModalLinkedin">
-                    <img id="img-linkedin" alt="Linkedin" title="Linkedin" class="img-circle right legenda-top" 
-                         src="Archives/img/rs-linkedin.png">
-                </a>
+           <div class="col-md-6 col-md-offset-6 color-white">
+            <a data-toggle="modal" data-target="#ModalLinkedin">
+                <img id="img-linkedin" alt="Linkedin" title="Linkedin" class="img-circle right legenda-top" 
+                src="Archives/img/rs-linkedin.png">
+            </a>
 
-                <a data-toggle="modal" data-target="#ModalSkype">
-                    <img id="img-skype" alt="Skype" title="Skype" class="img-circle right margin-right-0 legenda-top" 
-                         src="Archives/img/rs-skype.png">
-                </a>
+            <a data-toggle="modal" data-target="#ModalSkype">
+                <img id="img-skype" alt="Skype" title="Skype" class="img-circle right margin-right-0 legenda-top" 
+                src="Archives/img/rs-skype.png">
+            </a>
 
-                <a data-toggle="modal" data-target="#ModalTwitter">
-                    <img id="img-twitter" alt="Twitter" title="Twitter" class="img-circle right margin-right-0 legenda-top" 
-                         src="Archives/img/rs-twitter.png">
-                </a>
+            <a data-toggle="modal" data-target="#ModalTwitter">
+                <img id="img-twitter" alt="Twitter" title="Twitter" class="img-circle right margin-right-0 legenda-top" 
+                src="Archives/img/rs-twitter.png">
+            </a>
 
-                <a data-toggle="modal" data-target="#ModalFacebook">
-                    <img id="img-facebook" alt="Facebook" title="Facebook" class="img-circle right margin-right-0 legenda-top" 
-                         src="Archives/img/rs-facebook.png">
-                </a>
-            </div>
+            <a data-toggle="modal" data-target="#ModalFacebook">
+                <img id="img-facebook" alt="Facebook" title="Facebook" class="img-circle right margin-right-0 legenda-top" 
+                src="Archives/img/rs-facebook.png">
+            </a>
         </div>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-4 color-white">
-                <span class="bottom">©Copyright 2014 Lucas. Todos direitos reservados.</span>    
-            </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-4 color-white">
+            <span class="bottom">©Copyright 2014 Lucas. Todos direitos reservados.</span>    
         </div>
     </div>
 </div>
+</div>
 
 <!-- Import scripts end of page -->
-<script type="text/javascript" src="../Site Pessoal/Archives/scripts/jquery.easing.js" ></script>
-<script type="text/javascript" src="../Site Pessoal/Archives/scripts/jquery.ui.totop.min.js" ></script>
+<script type="text/javascript" src="../Site-Pessoal/Archives/scripts/jquery.easing.js" ></script>
+<script type="text/javascript" src="../Site-Pessoal/Archives/scripts/jquery.ui.totop.min.js" ></script>
 <!-- Script of Back to Top -->
 <script type="text/javascript">
-    $(document).ready(function() {
+$(document).ready(function() {
 
         //Element to back to top
         $().UItoTop({ 
-        easingType: 'easeOutQuart'
+            easingType: 'easeOutQuart'
         }); 
 
         //Element to Tooltip

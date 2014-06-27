@@ -22,13 +22,13 @@ function getdate()
 	//formatando o data para exibição na tela
 	var showDate = dias[day]+" - "+ daym+" de "+meses[mesAtual]+" de "+year;
 
-	if (document.all)
+	/*if (document.all)
 		document.all.clock.innerHTML = showDate;
 	else if (document.getElementById)
 		document.getElementById("lblSetDate").innerHTML = showDate;
 	else
 		document.write(showDate);
-
+*/
 }
 	if (!document.all&&!document.getElementById)
 		getdate();
