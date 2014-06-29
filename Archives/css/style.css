@@ -1,5 +1,12 @@
-body { -webkit-animation: bugfix infinite 1s;   margin-bottom: 70px; padding-bottom: 100px;   }
-html { position: relative; min-height: 100%;  font: 500 1.7rem/1.65 "Open Sans", Sans-serif; }
+body
+{ 
+	margin-bottom: 70px; padding-bottom: 100px; 
+	font-family: Conv_ProximaNova-Light, Arial, Tahoma;
+
+	font-weight: 500;  font-size: 17px; 
+}
+
+html { position: relative; min-height: 100%;  }
 ::selection{ background:#1269AC; color: #fff; }
 
 /*My First Media Query */
@@ -19,16 +26,21 @@ html { position: relative; min-height: 100%;  font: 500 1.7rem/1.65 "Open Sans",
 	to { background:#302F31; }
 }
 
-ul > li{ min-width:110px; max-width:auto; text-align: center; font-size: 14px; text-shadow: 0px 1px 0px #111; text-transform: uppercase;}
-ul > li:hover:not(.active){ 
- background:#302F31; -webkit-animation:AnimationFrameMenu 1.3s; -moz-animation:AnimationFrameMenu 1.3s; animation:AnimationFrameMenu 1.3s; } 
+ul > li
+{ 
+	min-width:110px; max-width:auto; text-align: center; font-size: 14px; text-shadow: 0px 1px 0px #111; text-transform: uppercase;
+}
+ul > li:hover:not(.active)
+{ 
+	background:#302F31; -webkit-animation:AnimationFrameMenu 1.3s; -moz-animation:AnimationFrameMenu 1.3s; animation:AnimationFrameMenu 1.3s; 
+} 
 
 /* Applying Class CSS */
 .active{ background-color: #302F31; }
 .bottom { bottom:0; font-size:12px; }
 .content-sub-menu{ background-color: #302F31; color: white; margin-top: 50px; height: 140px;  }
 .color-white{ color: white; }
-.font { font-weight: 300;  font-size: 17px;}
+.font {}
 .img-responsive { padding-bottom: 3%;}
 .nav-custom{ background-color: #1269AC; border-radius: 0px; border: 0px; }
 .margin-top-0 { margin-top: 3%; }
@@ -41,19 +53,22 @@ ul > li:hover:not(.active){
 .right{ float: right; }
 .left { float: left; }
 .link-footer{ color: white; }
-.Jcarousel{ background:#302F31; margin-top:50px; }
-
+.link-footer:hover{ color:#0094FF; }
+.Jcarousel{ background:#302F31; margin-top:50px;}
+.carousel-indicators li, .carousel-indicators .active { width: 15px; height: 15px;}
+.center{ text-align: center;}
+.border{border: 1px solid black;}
+/*
 .box-img-text{ font-family: inherit !important; text-shadow: 1px 1px 1px black; -webkit-backface-visibility: hidden;
 color: #FFF;  font-size: 50px;  font-weight: 800;  text-transform: uppercase; margin-bottom: 5px; letter-spacing: -1px;
 line-height: 50px; text-decoration: none; margin-right: 30px; 
 }
-
-/* Applying elemtent ID */
-#img-home { background-image:url("../img/home.png"); background-repeat:no-repeat; min-width:110px; height: 48px; cursor: pointer; }
-#img-home:hover { background-image:url("../img/home-hover.png"); background-repeat:no-repeat; }
+*/
 
 /* Applying CSS to social networks */
-#lblSetDate{ font-size: 19px; font-family: font-family: sans-serif; margin-top:60px; }
+/*#lblSetDate{ font-size: 19px; font-family: font-family: sans-serif; margin-top:60px; }*/
+
+
 #img-twitter:hover{background-color: white; cursor: pointer; }
 #img-facebook:hover{background-color: white; cursor: pointer; }
 #img-google:hover{background-color: white; cursor: pointer; }
@@ -68,19 +83,19 @@ line-height: 50px; text-decoration: none; margin-right: 30px;
 #toTopHover { background:url(../img/BackToTop.png) no-repeat left -51px; width:51px; height:51px; display:block; overflow:hidden; float:left;
   opacity: 0; -moz-opacity: 0; filter:alpha(opacity=0);
 }
-#toTop:active, #toTop:focus {
+#toTop:active, #toTop:focus
+{
   outline:none;
 }
 
-.carousel-indicators li, .carousel-indicators .active { width: 15px; height: 15px;}
-
 @media screen and (max-width: 480px) 
 {
-	#lblSetDate, #footer{font-size: 15px;}
+	.map-site{ visibility: hidden; }
+	.mid-site{margin-top: -5%; float: left; }
+	
 }
-@media screen and (max-width: 580px) 
+@media screen and (max-width: 303px) 
 {
-	#lblSetDate{font-size: 15px; margin-top: 5%;}
-
+	.mid-site{margin-top: -15%;}
 }
 

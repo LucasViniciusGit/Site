@@ -27,7 +27,8 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
 </head>
-<body onload="setdate(); SetIdade(); ">
+<body onload="SetIdade(); SetCumprimento(); SetMessage();">
+
 
 <nav class="navbar navbar-inverse navbar-fixed-top nav-custom" role="navigation">
     <div class="container">
@@ -38,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand legenda-bottom" href="#" title="Sobre Lucas Vinicius">
+            <a class="navbar-brand legenda-bottom" href="../Site-Pessoal/HomePage.html" title="Sobre Lucas Vinicius">
                 <span class="fa fa-user"></span>&nbsp;&nbsp;Lucas Vinicius
             </a>
         </div>
@@ -52,6 +53,7 @@
         </div>
     </div>
 </nav>
+
 <div class="Jcarousel" >
     <center>
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="10000">
@@ -65,8 +67,8 @@
             </ol>
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <div class="item active">
-                    <img  src="../Site-Pessoal/Archives/img/box-microsoft.png" alt="Microsoft">
+                <div class="item active ">
+                    <img class="img-1" src="../Site-Pessoal/Archives/img/box-microsoft.png" alt="Microsoft">
                 </div>
                 <div class="item">
                     <img src="../Site-Pessoal/Archives/img/box-java.png" alt="Java">
@@ -86,24 +88,68 @@
 </div>
 
 <div class="container font padding-top">
-    <br />
-    <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu adipiscing turpis. Quisque ut mollis augue, at commodo mi. Integer nunc diam, lobortis ut fringilla a, vestibulum quis quam. Nulla hendrerit lectus at nisl lacinia, interdum varius erat dictum. Nullam consectetur gravida lorem. In vel felis odio. Sed iaculis velit a felis euismod accumsan. Nam aliquet justo dignissim, vulputate tortor nec, tincidunt magna. Nunc at dolor vitae nunc euismod fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec eu risus in orci consectetur pharetra. Nunc at erat sodales, rutrum arcu faucibus, consectetur eros. Morbi urna orci, convallis vel felis et, imperdiet gravida mi. Cras semper libero ac tellus consequat condimentum.</p>
+    <h3 class="center">
+        <span id="cumprimento"></span>, seja bem vindo ao meu site.
+    </h3>
+    <br>
+    <div class="row">
 
-        <p>Nam suscipit venenatis arcu rutrum pellentesque. Suspendisse blandit magna vitae ante volutpat auctor. Aliquam augue arcu, congue eu venenatis vitae, blandit in magna. Maecenas gravida tortor elementum, faucibus sapien in, vehicula felis. Sed vitae nisi tincidunt nisi faucibus imperdiet. Proin ut augue non nunc facilisis adipiscing vitae ut enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean cursus magna vel arcu fermentum placerat. Sed tempus, sapien sit amet tempor auctor, arcu libero consequat eros, ut euismod purus purus venenatis velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam vel pretium lorem. Curabitur consectetur velit nisl, ut porttitor augue blandit luctus. Integer quis pharetra dolor, sit amet porttitor massa. Quisque non mollis nibh. Morbi ornare eget sem non venenatis.</p>
-
-        <p>Integer scelerisque metus eget tristique euismod. Curabitur scelerisque vulputate leo quis fringilla. Mauris porta placerat est sollicitudin commodo. Vivamus viverra elit at urna sodales, ac feugiat diam pulvinar. Duis vulputate sed lacus quis lacinia. Etiam rhoncus libero tempor quam commodo consequat. Pellentesque tortor purus, commodo nec mollis quis, dignissim vitae justo. Fusce bibendum, est sed rhoncus porttitor, enim diam ultricies metus, quis volutpat purus nibh ut lectus. Sed pulvinar pharetra volutpat. Suspendisse nec mauris ac mi mollis hendrerit sed ac metus. Quisque mattis mattis tellus, adipiscing rutrum lacus pharetra sit amet. Praesent aliquet, justo a hendrerit adipiscing, leo lacus auctor erat, nec sollicitudin elit augue at enim.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales nisl in orci malesuada, eget tempor tellus tempor. Vestibulum rutrum turpis eu augue mattis, ut ultrices sapien porttitor. Quisque imperdiet tincidunt nibh, in fermentum dui iaculis ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus gravida tincidunt nibh, nec varius neque sollicitudin quis. Suspendisse interdum tempor sem, et tincidunt lorem luctus at. Vivamus viverra arcu odio, nec rhoncus arcu vulputate vel. Cras in sapien eros.</p>
-
-        <p>Integer scelerisque metus eget tristique euismod. Curabitur scelerisque vulputate leo quis fringilla. Mauris porta placerat est sollicitudin commodo. Vivamus viverra elit at urna sodales, ac feugiat diam pulvinar. Duis vulputate sed lacus quis lacinia. Etiam rhoncus libero tempor quam commodo consequat. Pellentesque tortor purus, commodo nec mollis quis, dignissim vitae justo. Fusce bibendum, est sed rhoncus porttitor, enim diam ultricies metus, quis volutpat purus nibh ut lectus. Sed pulvinar pharetra volutpat. Suspendisse nec mauris ac mi mollis hendrerit sed ac metus. Quisque mattis mattis tellus, adipiscing rutrum lacus pharetra sit amet. Praesent aliquet, justo a hendrerit adipiscing, leo lacus auctor erat, nec sollicitudin elit augue at enim.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales nisl in orci malesuada, eget tempor tellus tempor. Vestibulum rutrum turpis eu augue mattis, ut ultrices sapien porttitor. Quisque imperdiet tincidunt nibh, in fermentum dui iaculis ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus gravida tincidunt nibh, nec varius neque sollicitudin quis. Suspendisse interdum tempor sem, et tincidunt lorem luctus at. Vivamus viverra arcu odio, nec rhoncus arcu vulputate vel. Cras in sapien eros.</p>
-
-        <p>Integer scelerisque metus eget tristique euismod. Curabitur scelerisque vulputate leo quis fringilla. Mauris porta placerat est sollicitudin commodo. Vivamus viverra elit at urna sodales, ac feugiat diam pulvinar. Duis vulputate sed lacus quis lacinia. Etiam rhoncus libero tempor quam commodo consequat. Pellentesque tortor purus, commodo nec mollis quis, dignissim vitae justo. Fusce bibendum, est sed rhoncus porttitor, enim diam ultricies metus, quis volutpat purus nibh ut lectus. Sed pulvinar pharetra volutpat. Suspendisse nec mauris ac mi mollis hendrerit sed ac metus. Quisque mattis mattis tellus, adipiscing rutrum lacus pharetra sit amet. Praesent aliquet, justo a hendrerit adipiscing, leo lacus auctor erat, nec sollicitudin elit augue at enim.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales nisl in orci malesuada, eget tempor tellus tempor. Vestibulum rutrum turpis eu augue mattis, ut ultrices sapien porttitor. Quisque imperdiet tincidunt nibh, in fermentum dui iaculis ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus gravida tincidunt nibh, nec varius neque sollicitudin quis. Suspendisse interdum tempor sem, et tincidunt lorem luctus at. Vivamus viverra arcu odio, nec rhoncus arcu vulputate vel. Cras in sapien eros.</p>
+        <div class="col-sm-6 col-md-6 ">
+            <p>
+                &nbsp;&nbsp;&nbsp;
+                Este é meu site pessoal, criado como intuito de mostrar meu currículo e meus trabalhos acadêmicos.
+                Uma idéia bem simples e prática de mostrar todo conhecimento, mas sempre existe algo que é complicado 
+                mostrar com palavras, como por exemplo:
+            </p>
+            <ol >
+                <li>
+                    Projetos realizados.
+                </li>
+                <li>
+                    Sites acadêmicos e comercializados desenvolvidos.
+                </li>
+                <li>
+                    Artigos interessantes.
+                </li>
+                <li>
+                    Tutorias didaticos.
+                </li>
+                <li>
+                    Entre outros.
+                </li>
+            </ol>
+            <p>
+                &nbsp;&nbsp;&nbsp;
+                Então, decidi criar uma página aonde eu pudesse compartilhar com todas as pessoas que gostam dessa área de tecnologia,
+                mostrando todas as novas tecnologias,artigos, novidades, o que é ?, Como  utilizar? , entre outras. Navegue até 
+                <a href="../Site-Pessoal/Tutoriais.html" class="legenda-bottom" title="Página de Tutoriais">Tutorais</a> 
+                e descubra uma fonte de conhecimentos e idéias. 
+            </p>
+        </div>
+        <div class="col-sm-6 col-md-6 ">
+            <p>
+                &nbsp;&nbsp;&nbsp;
+                Sou Lucas Vinicius e estou graduando <i>Sistema de Informação</i> pela <i>Faminas BH</i>, onde sou apaixonado e louco
+                pela área de tecnologia, onde estou sempre procurando me manter atualizado e por dentro de outros assuntos e respectivamente 
+                novidades de outras áreas.
+            </p>
+            <p> 
+                &nbsp;&nbsp;&nbsp;
+                <strong>Pessoalmente</strong>, sou uma pessoal tranqüila 'calma', onde tento escutar antes de questionar, gosto muito  de conversar com outras pessoas, receber e passar conhecimento 'fundamental', <strong>Profissionalmente</strong>, gosto muito do
+                trabalho em equipe, acho interessante quando colegas de trabalho passam seus conhecimentos uns aos outros, sempre tento ser
+                otimista e outras coisa e muito mais, que apenas pessoalmente podem conhecer melhor.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;
+                Muito Obrigado por visitar meu site *_*, existe uma página de 
+                <a href="../Site-Pessoal/Contato.html" class="legenda-bottom" title="Página de Contato">Contato</a>
+                onde você pode dá sua opinião sobre o site ou até mesmo entrar em contato 'assim que possível retornarei seu e-mail'.
+            </p>
+        </div>
     </div>
+    <h3 class="center">
+        <span id="message" class="box-frases"></span>
+    </h3>
 
     <!-- Modal Facebook -->
     <div class="modal fade" id="ModalFacebook" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
@@ -234,7 +280,7 @@
 <div id="footer">
     <div class="container" >
         <div class="row">
-            <div class="col-md-6 col-sm-6 color-white margin-top-2">
+            <div class="col-md-6 col-sm-6 color-white margin-top-2 map-site">
                 <span class="col-md-3"><strong>Mapa do Site:</strong></span>
                 <a class="link-footer" href="../Site-Pessoal/Curriculo.html"><span class="col-md-2">Currículo</span></a>
                 <a class="link-footer" href="../Site-Pessoal/Portifolio.html"><span class="col-md-2">Portifolio</span></a>
@@ -243,7 +289,7 @@
             </div>
         </div>
         <div class="row">
-           <div class="col-md-6 col-md-offset-6 color-white">
+           <div class="col-md-6 col-md-offset-6 color-white mid-site">
             <a data-toggle="modal" data-target="#ModalLinkedin">
                 <img id="img-linkedin" alt="Linkedin" title="Linkedin" class="img-circle right legenda-top" 
                 src="Archives/img/rs-linkedin.png">
@@ -278,7 +324,7 @@
 <script type="text/javascript" src="../Site-Pessoal/Archives/scripts/jquery.ui.totop.min.js" ></script>
 <!-- Script of Back to Top -->
 <script type="text/javascript">
-$(document).ready(function() {
+    $(document).ready(function() {
 
         //Element to back to top
         $().UItoTop({ 
