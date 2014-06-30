@@ -76,6 +76,7 @@ function SetCumprimento()
 
 }
 
+/* Função que sorteia um numero e seleciona uma mensagem para exibiçao */
 function SetMessage()
 {
 	var rdn = Math.floor((Math.random() * 20) + 1);

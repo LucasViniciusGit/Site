@@ -35,12 +35,15 @@ ul > li:hover:not(.active)
 	background:#302F31; -webkit-animation:AnimationFrameMenu 1.3s; -moz-animation:AnimationFrameMenu 1.3s; animation:AnimationFrameMenu 1.3s; 
 } 
 
+textarea { max-width: 555px; }
+hr{ margin-bottom:0px; margin-top:-5px; }
+
 /* Applying Class CSS */
 .active{ background-color: #302F31; }
 .bottom { bottom:0; font-size:12px; }
 .content-sub-menu{ background-color: #302F31; color: white; margin-top: 50px; height: 140px;  }
 .color-white{ color: white; }
-.font {}
+.color-red{color: red}
 .img-responsive { padding-bottom: 3%;}
 .nav-custom{ background-color: #1269AC; border-radius: 0px; border: 0px; }
 .margin-top-0 { margin-top: 3%; }
@@ -48,7 +51,9 @@ ul > li:hover:not(.active)
 .margin-top-2 { margin-top: 1%; }
 .margin-right-0 { margin-right:10px; }
 .margin-left-0 { margin-left: 10px; }
-.padding-top{ padding-top:30px;}
+.padding-top-0{ padding-top:30px;}
+.padding-top-1{ padding-top:60px;}
+
 .left-bar{ border-left: 2px solid #cccccc; padding-left: 10px; text-align: justify; }
 .right{ float: right; }
 .left { float: left; }
