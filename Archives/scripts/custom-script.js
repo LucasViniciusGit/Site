@@ -1,5 +1,6 @@
 //No inherent rights of javascript function
 
+//Array para Formatar dia e hora
 var dias = new Array("Domingo","Segunda-Feira","Terça-Feira","Quarta-Feira","Quinta-feira","Sexta-Feira","Sábado");
 var meses = new Array("Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro");
 
@@ -25,10 +26,10 @@ function getdate()
 	/*if (document.all)
 		document.all.clock.innerHTML = showDate;
 	else if (document.getElementById)
-		document.getElementById("lblSetDate").innerHTML = showDate;
+		document.getElementById("lblDate").innerHTML = showDate;
 	else
-		document.write(showDate);
-*/
+		document.write(showDate);*/
+
 }
 	if (!document.all&&!document.getElementById)
 		getdate();

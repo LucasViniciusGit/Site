@@ -71,7 +71,7 @@ line-height: 50px; text-decoration: none; margin-right: 30px;
 */
 
 /* Applying CSS to social networks */
-/*#lblSetDate{ font-size: 19px; font-family: font-family: sans-serif; margin-top:60px; }*/
+#lblDate{ visibility: hidden; }
 
 
 #img-twitter:hover{background-color: white; cursor: pointer; }
@@ -79,6 +79,7 @@ line-height: 50px; text-decoration: none; margin-right: 30px;
 #img-google:hover{background-color: white; cursor: pointer; }
 #img-linkedin:hover{background-color: white; cursor: pointer; }
 #img-skype:hover{background-color: white; cursor: pointer; }
+
 #footer { position: absolute; bottom: 0; width: 100%; height: 130px; background-color: #302F31; font-size:16px;}
 
 /* Applying CSS to Back to TOP */
