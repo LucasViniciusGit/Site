@@ -53,6 +53,7 @@ hr{ margin-bottom:0px; margin-top:-5px; }
 .margin-left-0 { margin-left: 10px; }
 .padding-top-0{ padding-top:30px;}
 .padding-top-1{ padding-top:60px;}
+.padding-bottom-0{ padding-bottom: 20px; }
 
 .left-bar{ border-left: 2px solid #cccccc; padding-left: 10px; text-align: justify; }
 .right{ float: right; }
@@ -63,6 +64,8 @@ hr{ margin-bottom:0px; margin-top:-5px; }
 .carousel-indicators li, .carousel-indicators .active { width: 15px; height: 15px;}
 .center{ text-align: center;}
 .border{border: 1px solid black;}
+.not-border-radius { border-radius: 0px; webkit-border-radius:0px; moz-border-radius:0px;  }
+
 /*
 .box-img-text{ font-family: inherit !important; text-shadow: 1px 1px 1px black; -webkit-backface-visibility: hidden;
 color: #FFF;  font-size: 50px;  font-weight: 800;  text-transform: uppercase; margin-bottom: 5px; letter-spacing: -1px;
@@ -72,7 +75,6 @@ line-height: 50px; text-decoration: none; margin-right: 30px;
 
 /* Applying CSS to social networks */
 #lblDate{ visibility: hidden; }
-
 
 #img-twitter:hover{background-color: white; cursor: pointer; }
 #img-facebook:hover{background-color: white; cursor: pointer; }
@@ -99,9 +101,10 @@ line-height: 50px; text-decoration: none; margin-right: 30px;
 	.map-site{ visibility: hidden; }
 	.mid-site{margin-top: -5%; float: left; }
 	
-}
+}/*/mediaquery*/
+
 @media screen and (max-width: 303px) 
 {
 	.mid-site{margin-top: -15%;}
-}
+}/*/mediaquery*/
 

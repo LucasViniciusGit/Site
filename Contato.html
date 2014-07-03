@@ -69,7 +69,7 @@
         // SE houve um submit no formulário
         if (isset($_POST['enviar'])) 
         {
-            require("class.phpmailer.php");
+            require("../dist/class.phpmailer.php");
                     
             // campos pegado no formulario 
             $nome=$_POST['Nome'];
@@ -139,7 +139,7 @@
         }
     ?> -->
 
-    <form role="form-horizontal"  method="post" >
+    <form class="form-horizontal" role="form"  method="post">
         <div class="form-group row">
             <label for="inputNome" class="col-sm-1 control-label">Nome <i class="color-red">*</i></label>
             <div class="col-sm-6">
@@ -161,7 +161,7 @@
         <div class="form-group row">
             <label for="inputAssunto" class="col-sm-1 control-label">Assunto</label>
             <div class="col-sm-6">
-                <select id="SelectAssunto" name="Assunto" class="form-control">
+                <select id="inputAssunto" name="Assunto" class="form-control">
                     <option>Contato</option>
                     <option>Crítica</option>
                     <option>Informaçao</option>
@@ -171,9 +171,9 @@
             </div>
         </div>
         <div class="form-group row">
-            <label for="inputAssunto" class="col-sm-1 control-label">Mensagem<i class="color-red">*</i></label>
+            <label for="inputMensagem" class="col-sm-1 control-label">Mensagem<i class="color-red">*</i></label>
             <div class="col-sm-6">
-                <textarea class="form-control" name="Mensagem" rows="3" required></textarea>
+                <textarea class="form-control" id="inputMensagem" name="Mensagem" rows="3" required></textarea>
             </div>
         </div>
         <!-- Button -->
@@ -181,7 +181,7 @@
           <label class="control-label"></label>
             <div class="controls">
                 <button id="enviar" type="submit" name="enviar" class="btn btn-primary">Enviar</button>
-                <input type="Reset" class="btn btn-danger" value="Limpar"></button>
+                <input type="Reset" class="btn btn-danger" value="Limpar" />
             </div>
         </div>
     </form>
