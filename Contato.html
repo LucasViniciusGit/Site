@@ -29,14 +29,14 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
-</head>
+  </head>
 
-<body onload="SetIdade(); Setdate();">
+  <body onload="SetIdade(); Setdate();">
 
 <nav class="navbar navbar-inverse navbar-fixed-top nav-custom" role="navigation">
     <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -58,7 +58,7 @@
 </nav>
 
 <div class="container padding-top-1">
- 
+
     <h3>Formulário de Contato</h3>
     <hr />
     <p class="help-block">Campos Obrigatórios são marcados com <i class="color-red">*</i></p>
@@ -173,12 +173,13 @@
         <div class="form-group row">
             <label for="inputMensagem" class="col-sm-1 control-label">Mensagem<i class="color-red">*</i></label>
             <div class="col-sm-6">
-                <textarea class="form-control" id="inputMensagem" name="Mensagem" rows="3" required></textarea>
+                <textarea id="inputMensagem" class="form-control" placeholder="Deixe sua mensagem aqui..." 
+                name="Mensagem" rows="3" required></textarea>
             </div>
         </div>
         <!-- Button -->
         <div class="control-group">
-          <label class="control-label"></label>
+            <label class="control-label"></label>
             <div class="controls">
                 <button id="enviar" type="submit" name="enviar" class="btn btn-primary">Enviar</button>
                 <input type="Reset" class="btn btn-danger" value="Limpar" />
@@ -359,8 +360,8 @@
 <script type="text/javascript" src="../Site-Pessoal/Archives/scripts/jquery.ui.totop.min.js" ></script>
 <!-- Script of Back to Top -->
 <script type="text/javascript">
-    $(document).ready(function() 
-    {
+$(document).ready(function() 
+{
         //mascara para o telefone
         $("#inputTelephone").mask("(99) 9999-9999?9");
 
@@ -379,7 +380,7 @@
             placement: 'top'
         });
     });
-    </script>
+</script>
 
 </body>
 </html>
