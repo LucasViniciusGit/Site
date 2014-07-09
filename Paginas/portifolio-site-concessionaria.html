@@ -29,7 +29,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
 </head>
-<body>
+<body onload="SetIdade();">
 
 <nav class="navbar navbar-inverse navbar-fixed-top nav-custom" role="navigation">
     <div class="container">
@@ -73,7 +73,7 @@
             <span><b>Linguagens:&nbsp;</b></span>
                 <span>php 4</span>
             <br>
-            <span><b>FrameWork:&nbsp;</b></span>
+            <span><b>Framework:&nbsp;</b></span>
                 <span>Nenhum utilizado</span>
             <br>
             <span><b>Data:&nbsp;</b></span>
@@ -81,6 +81,12 @@
 
         </div>
     </div>
+   <br>
+    <ol class="breadcrumb">
+      <li><a href="../Portifolio.html">Portifólio</a></li>
+      <li class="">Site Concessionária</li>
+    </ol>
+
 
     <!--  <?php
 
@@ -157,7 +163,7 @@
         }
         ?> -->
 
-    <div class="padding-top-1">
+    <div class="padding-top-0">
         <h4>Comentários</h4>
     </div>
     <hr>
@@ -171,10 +177,11 @@
         <div class="control-group">
             <div class="controls right">
                 <button id="enviar" type="submit" name="enviar" class="btn btn-primary">Enviar</button>
+                <input type="Reset" class="btn btn-danger" value="Limpar" />
             </div>
         </div>
     </form>
-    
+
     <!-- Modal Facebook -->
     <div class="modal fade" id="ModalFacebook" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
         <div class="modal-dialog">

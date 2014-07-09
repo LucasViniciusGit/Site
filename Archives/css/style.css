@@ -1,12 +1,8 @@
 body
-{ 
-	margin-bottom: 70px; padding-bottom: 100px; 
-	font-family: Conv_ProximaNova-Light, Arial, Tahoma;
-
-	font-weight: 500;  font-size: 17px; 
-	background: #FCFCFC;
+{
+ margin-bottom: 70px; padding-bottom: 100px;  font-family: Conv_ProximaNova-Light, Arial, Tahoma;
+ font-weight: 500;  font-size: 17px; background: #FCFCFC;
 }
-
 html { position: relative; min-height: 100%;  }
 ::selection{ background:#1269AC; color: #fff; }
 
@@ -28,47 +24,61 @@ html { position: relative; min-height: 100%;  }
 }
 
 ul > li
-{ 
-	min-width:110px; max-width:auto; text-align: center; font-size: 14px; text-shadow: 0px 1px 0px #111; text-transform: uppercase;
-}
+{ min-width:110px; max-width:auto; text-align: center; font-size: 14px; text-shadow: 0px 1px 0px #111; text-transform: uppercase; }
 ul > li:hover:not(.active)
-{ 
-	background:#302F31; -webkit-animation:AnimationFrameMenu 1.3s; -moz-animation:AnimationFrameMenu 1.3s; animation:AnimationFrameMenu 1.3s; 
-} 
+{ background:#302F31; -webkit-animation:AnimationFrameMenu 1.3s; -moz-animation:AnimationFrameMenu 1.3s; animation:AnimationFrameMenu 1.3s;}
+
+ol > li
+{ list-style: none; }
 
 textarea { max-width: 100%; }
-hr{ margin-bottom:0px; margin-top:-5px; }
+hr { margin-bottom:0px; margin-top:-5px; }
 
 /* Applying Class CSS */
 .active{ background-color: #302F31; }
+.background-white {background-color: white;}
+.border{border: 1px solid black;}
 .bottom { bottom:0; font-size:12px; }
-.content-sub-menu{ background-color: #302F31; color: white; margin-top: 50px; height: 140px;  }
-.color-white{ color: white; }
-.color-red{color: red}
+.carousel-indicators li, .carousel-indicators .active { width: 15px; height: 15px;}
+.center { text-align: center; }
+.color-black { color: black; }
+.color-white { color: white; }
+.color-red {color: red }
+.content-sub-menu { background-color: #302F31; color: white; margin-top: 50px; height: 140px;  }
+.img-curriculo { margin-top: -70px; }
+.img-portifolio { width: 500px; height: 250px; }
 .img-responsive { padding-bottom: 3%;}
-.nav-custom{ background-color: #1269AC; border-radius: 0px; border: 0px; }
+.Jcarousel { background:#302F31; margin-top:50px;}
+.left { float: left; }
+.left-bar { border-left: 2px solid #cccccc; padding-left: 10px; text-align: justify; }
+.link-footer { color: white; }
+.link-footer:hover { color:#0094FF; }
+.margin-bottom-0 {margin-bottom: 10px;}
+.margin-left-0 { margin-left: 10px; }
+.margin-left-1 { margin-left: 50px; }
+.margin-left-3 {margin-left: -35px;}
 .margin-top-0 { margin-top: 3%; }
 .margin-top-1 { margin-top: 5%; }
 .margin-top-2 { margin-top: 1%; }
+.margin-top-3 { margin-top: 100px; }
 .margin-right-0 { margin-right:10px; }
-.margin-left-0 { margin-left: 10px; }
-.padding-top-0{ padding-top:30px;}
-.padding-top-1{ padding-top:60px;}
-.padding-bottom-0{ padding-bottom: 20px; }
-.thumbnail:hover { opacity: .6; border-color:#1269AC }
-.left-bar{ border-left: 2px solid #cccccc; padding-left: 10px; text-align: justify; }
-.right{ float: right; }
-.left { float: left; }
-.link-footer{ color: white; }
-.link-footer:hover{ color:#0094FF; }
-.Jcarousel{ background:#302F31; margin-top:50px;}
-.carousel-indicators li, .carousel-indicators .active { width: 15px; height: 15px;}
-.center{ text-align: center;}
-.border{border: 1px solid black;}
+.nav-custom { background-color: #1269AC; border-radius: 0px; border: 0px; }
 .not-border-radius { border-radius: 0px; webkit-border-radius:0px; moz-border-radius:0px;  }
-.img-portifolio { width: 500px; height: 250px; }
+.padding-bottom-0 { padding-bottom: 20px; }
+.padding-top-0 { padding-top:30px;}
+.padding-top-1 { padding-top:60px;}
+.padding-top-2 { padding-top: 35px;}
+.right { float: right; }
+.thumbnail:hover { opacity: .6; border-color:#1269AC }
 
-/*
+/* Class for in chart - curriculo */
+.chart { position: relative; display: inline-block; text-align: center; }
+.chart canvas { position: absolute; top: 0; left: 0; }
+.percent {line-height: 150px; margin-left: 60px;}
+.percent:after { content: '%'; }
+
+/* Letras maiculas para colar em destaque
+
 .box-img-text{ font-family: inherit !important; text-shadow: 1px 1px 1px black; -webkit-backface-visibility: hidden;
 color: #FFF;  font-size: 50px;  font-weight: 800;  text-transform: uppercase; margin-bottom: 5px; letter-spacing: -1px;
 line-height: 50px; text-decoration: none; margin-right: 30px; 
@@ -77,13 +87,11 @@ line-height: 50px; text-decoration: none; margin-right: 30px;
 
 /* Applying CSS to social networks */
 #lblDate{ visibility: hidden; }
-
 #img-twitter:hover{background-color: white; cursor: pointer; }
 #img-facebook:hover{background-color: white; cursor: pointer; }
 #img-google:hover{background-color: white; cursor: pointer; }
 #img-linkedin:hover{background-color: white; cursor: pointer; }
 #img-skype:hover{background-color: white; cursor: pointer; }
-
 #footer { position: absolute; bottom: 0; width: 100%; height: 130px; background-color: #302F31; font-size:16px;}
 
 /* Applying CSS to Back to TOP */
@@ -98,15 +106,28 @@ line-height: 50px; text-decoration: none; margin-right: 30px;
   outline:none;
 }
 
+/* Aplicando MEDIA SCREEN */
+@media screen and (max-width: 985px)
+{
+	/*Aplicando media para curriculo*/
+	.margin-top-cur-3 {margin-top: -15px;}
+	.margin-left-3 {margin-left: 0px; margin-top: 0px; }
+	canvas{ text-align: center; margin-left: -60px; }
+	.percent{margin-left: 0px;}
+	.skills-name{margin-left: -50px;}
+
+}/*/mediaquery*/
+
 @media screen and (max-width: 480px) 
 {
+	/*Aplicando media para o rodape do site*/
 	.map-site{ visibility: hidden; }
 	.mid-site{margin-top: -5%; float: left; }
-	
+
 }/*/mediaquery*/
 
 @media screen and (max-width: 303px) 
 {
 	.mid-site{margin-top: -15%;}
-}/*/mediaquery*/
 
+}/*/mediaquery*/
