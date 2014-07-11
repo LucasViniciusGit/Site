@@ -34,10 +34,14 @@ ol > li
 textarea { max-width: 100%; }
 hr { margin-bottom:0px; margin-top:-5px; }
 
+span > a { color: black; }
+span > a:hover { color: black; }
+
 /* Applying Class CSS */
 .active{ background-color: #302F31; }
 .background-white {background-color: white;}
 .border{border: 1px solid black;}
+.border-gray{ border-color: #F2F5F7;}
 .bottom { bottom:0; font-size:12px; }
 .carousel-indicators li, .carousel-indicators .active { width: 15px; height: 15px;}
 .center { text-align: center; }
@@ -45,6 +49,7 @@ hr { margin-bottom:0px; margin-top:-5px; }
 .color-white { color: white; }
 .color-red {color: red }
 .content-sub-menu { background-color: #302F31; color: white; margin-top: 50px; height: 140px;  }
+.font-small { font-size: 13px; }
 .img-curriculo { margin-top: -70px; }
 .img-portifolio { width: 500px; height: 250px; }
 .img-responsive { padding-bottom: 3%;}
@@ -56,20 +61,38 @@ hr { margin-bottom:0px; margin-top:-5px; }
 .margin-bottom-0 {margin-bottom: 10px;}
 .margin-left-0 { margin-left: 10px; }
 .margin-left-1 { margin-left: 50px; }
-.margin-left-3 {margin-left: -35px;}
+.margin-left-3 { margin-left: -35px;}
 .margin-top-0 { margin-top: 3%; }
 .margin-top-1 { margin-top: 5%; }
 .margin-top-2 { margin-top: 1%; }
 .margin-top-3 { margin-top: 100px; }
+.margin-top-4 { margin-top: 3px; }
 .margin-right-0 { margin-right:10px; }
 .nav-custom { background-color: #1269AC; border-radius: 0px; border: 0px; }
 .not-border-radius { border-radius: 0px; webkit-border-radius:0px; moz-border-radius:0px;  }
 .padding-bottom-0 { padding-bottom: 20px; }
-.padding-top-0 { padding-top:30px;}
-.padding-top-1 { padding-top:60px;}
-.padding-top-2 { padding-top: 35px;}
+.padding-top-0 { padding-top:30px; }
+.padding-top-1 { padding-top:60px; }
+.padding-top-2 { padding-top: 35px; }
+.padding-top-3 { padding-top: 17px; }
+.padding-top-4 { padding-top: 15px; }
+.padding-top-5 { padding-top: 25px;}
 .right { float: right; }
 .thumbnail:hover { opacity: .6; border-color:#1269AC }
+
+/* Applying PROPERTIES for CHART */
+.chart { position: relative; display: inline-block; text-align: center; }
+.chart canvas { position: absolute; top: 0; left: 0; }
+
+/* Applying Color for box */
+.box { width:85px; height: 80px;}
+.box-left { background: #F2F5F7; }
+.box-left:hover { background: #EEEEEE; }
+.box-right { background: none; }
+.box-right:hover { background: #EEEEEE; }
+.box-blue { background-color: #1269AC; }
+.box-black { background-color: #302F31; }
+.box-margin { margin-right: 0px; };
 
 /* Class for in chart - curriculo */
 .chart { position: relative; display: inline-block; text-align: center; }
@@ -106,21 +129,30 @@ line-height: 50px; text-decoration: none; margin-right: 30px;
   outline:none;
 }
 
-/* Aplicando MEDIA SCREEN */
-@media screen and (max-width: 985px)
+@media screen and (max-width: 1200px)
 {
-	/*Aplicando media para curriculo*/
-	.margin-top-cur-3 {margin-top: -15px;}
-	.margin-left-3 {margin-left: 0px; margin-top: 0px; }
-	canvas{ text-align: center; margin-left: -60px; }
-	.percent{margin-left: 0px;}
-	.skills-name{margin-left: -50px;}
+	.box { width: 75px;}
+	.font-small{ font-size: 10px;}
 
 }/*/mediaquery*/
 
+/* Aplicando MEDIA SCREEN */
+@media screen and (max-width: 990px)
+{
+	/*Aplicando media para curriculo*/
+	.margin-top-cur-3 { margin-top: -15px;}
+	.margin-left-3 { margin-left: 0px; margin-top: 0px; }
+	canvas{ text-align: center; margin-left: -60px; }
+	.percent{ margin-left: 0px;}
+	.skills-name{ margin-left: -50px;}
+	.box { width: 85px;}
+	.font-small{ font-size: 13px;}
+
+}/*/mediaquery*/
+
+/*Aplicando media para o rodape do site*/
 @media screen and (max-width: 480px) 
 {
-	/*Aplicando media para o rodape do site*/
 	.map-site{ visibility: hidden; }
 	.mid-site{margin-top: -5%; float: left; }
 
@@ -129,5 +161,4 @@ line-height: 50px; text-decoration: none; margin-right: 30px;
 @media screen and (max-width: 303px) 
 {
 	.mid-site{margin-top: -15%;}
-
 }/*/mediaquery*/
