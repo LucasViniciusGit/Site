@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt" >
+<head>
+    <title>Portifolio Em Busca Do Tesouro Perdido</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Lucas Vinicius Pereira" />
+    <meta name="keywords" content="lucas vinicius, site, pessoal, perfil, profissional" />
+    <meta name="description" content="Apresentação do perfil profissional, apresentando todos os trabalhos desenvolvidos junto com portfólios e tutorias sobre as técnicas e tecnologias utilizadas no mercado atual." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /> -->
+
+    <!--Importano o Css -->
+    <link rel="shortcut icon" href="../Archives/img/icon.jpg" />
+    <link rel="stylesheet" href="../Archives/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../Archives/css/normalize.css"/>
+    <link rel="stylesheet" href="../Archives/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="../Archives/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../Archives/css/style.css"/>
+
+    <!--Importano o JavaScript -->
+    <script type="text/javascript" src="../Archives/scripts/jquery-1.11.1.min.js" ></script>
+    <script type="text/javascript" src="../Archives/scripts/bootstrap.js" ></script>
+    <script type="text/javascript" src="../Archives/scripts/custom-script.js" ></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+<body onload="SetIdade();">
+
+<nav class="navbar navbar-inverse navbar-fixed-top nav-custom" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand legenda-bottom" href="HomePage" title="Sobre Lucas Vinicius">
+                <span class="fa fa-user"></span>&nbsp;&nbsp;Lucas Vinicius
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a class="link-footer" href="Curriculo">Currículo</a></li>
+            <li class="active" ><a class="link-footer" href="Portifolio">Portifolio</a></li>
+            <li><a class="link-footer" href="Tutorial">Tutoriais</a></li>
+            <li><a class="link-footer" href="Contato">Contato</a></li>
+        </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container padding-top-1">
+    <h1>Em Busca Do Tesouro Perdido</h1>
+    <hr>
+    <br>
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <img class="img-thumbnail img-portifolio " src="../Archives/img/Portifolio/foto11.png" alt="">
+        </div>
+        <div class="col-md-6">
+            <h4><b>Descrição:&nbsp;</b></h4>
+            <p>
+                O <i>Game</i> foi criado para conclusão de curso, o jogo mostra a vida de um pirata que vai em busca
+                de um tesouro, e encontra seus inimigos que também está em busca do tesouro. Este <i>jogo</i> ganhou o prêmio de
+                melhor <i>Game Design</i> do curso.
+            </p>
+            <span><b>Linguagen:&nbsp;</b></span>
+                <span>GML</span>
+            <br>
+            <span><b>Recursos utilizados:&nbsp;</b></span>
+                <span>Sprites, Flash, GIMP 2</span>
+            <br>
+            <span><b>Data:&nbsp;</b></span>
+                <span>1/6/2013</span>
+            <br>
+            <span><b>Download:&nbsp;</b></span>
+                <a target="_blank" href="https://mega.co.nz/#!nYESkbAC!GKbXCgLCeddN5x0hjAjc5vQ6UJcHzqxltaKjauFjYZY">Clique aqui para baixar</a>
+        </div>
+    </div>
+   <br>
+    <ol class="breadcrumb">
+      <li><a href="../Portifolio.html">Portifólio</a></li>
+      <li>Em Busca Do Tesouro Perdido</li>
+    </ol>
+
+    <!--  <?php
+
+        // SE houve um submit no formulário
+        if (isset($_POST['enviar'])) 
+        {
+            require("../dist/class.phpmailer.php");
+                    
+            // campos pegado no formulario 
+            $nome= "Anonimo";
+            $email="Anonimo";
+            $telefone="Anonimo";
+            $assunto="Em Busca Do Tesouro Perdido";
+            $texto=$_POST['Mensagem'];
+            
+            
+            // Inicia a classe PHPMailer
+            $mail = new PHPMailer();
+
+            $mail->Mailer = "smtp";
+
+            $mail->Port="2525"; // ajusto a porta de smt a ser utilizada. Neste caso, a 587 que o GMail utiliza
+
+            $mail->SMTPSecure = "TLS"; // ajusto o tipo de comunicação a ser utilizada, no caso, a TLS do GMail
+
+            $mail->IsSMTP(); // ajusto o email para utilizar protocolo SMTP
+
+            $mail->Host = "mx1.hostinger.com.br";  // especifico o endereço do servidor smtp do GMail
+
+            $mail->SMTPAuth = true;  // ativo a autenticação SMTP, no caso do GMail, é necessário
+
+            $mail->Username = "phpmailer@lucasvinicius.besaba.com";  // Usuário SMTP do GMail
+
+            $mail->Password = "123456789"; // Senha do usuário SMTP do GMail
+
+            $mail->From = $email; // Email de quem envia o email
+
+            $mail->FromName = $nome; // Nome de quem envia o email
+
+            $mail->AddAddress("lucasvp29@hotmail.com"); // Endereço e nome de quem vai receber o email, o nome é opcional
+
+            $mail->AddAddress("lv.lucasvin@gmail.com"); // Mais um endereço, somente para mostrar que você pode mandar email para varios endereços no mesmo email. Equilvalente a você usar a [vírgula] nos webmail e clientes de email
+
+            $mail->CharSet = 'iso-8859-1';
+
+            $mail->WordWrap = 50;// quebra linha sempre que uma linha atingir 50 caracteres
+
+            $mail->IsHTML(true); // ajusto envio do email no formato HTML
+
+            $mail->Subject =    'Assunto do Email: '.$assunto; // Aqui colocar o assunto do email
+
+            $mail->Body     = '<br /><b>Nome: </b>'.$nome.'<br /><br /><b>Corpo do Email: </b><br />'.$texto.'<br />'.'<br /><b>Telefone: </b>'.$telefone.'<br />'.'<b>Email: </b>'.$email.'<br /><br /> Data de envio: '.'<span id="lblDate"></span>'; 
+
+            $mail->AltBody = "Este é o corpo da mensagem para usuários que possuem a opção de ver o html do email desativada em seu cliente de email";  
+            
+            $message = "";
+            
+            if($mail->Send())
+            {   
+                $message.='<div class="alert alert-success" role="alert">';
+                $message.='<span>Seu comentário foi enviado com sucesso.</span>';
+                $message.='</div>';
+                
+                echo $message;
+            }
+            else
+            {
+                $message.='<div class="alert alert-danger" role="alert">';
+                $message.='<span>Seu comentário NÃO foi enviado, ocorreu Alguma inconsistência. Por favor, Tente Novamente!</span>';
+                $message.='</div>';
+                
+                echo $message;
+            }
+        }
+        ?> -->
+
+    <div class="padding-top-0">
+        <h4><i class="fa fa-comments-o"></i> Comentários</h4>
+    </div>
+    <hr>
+    <form class="form-horizontal padding-top-0" role="form"  method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+        <div class="form-group row">
+            <div class="col-sm-12">
+                <textarea id="inputMensagem" class="form-control" placeholder="Digite seu comentário aqui..."
+                name="Mensagem" rows="3" required></textarea>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls right">
+                <button id="enviar" type="submit" name="enviar" class="btn btn-primary">Enviar</button>
+                <input type="Reset" class="btn btn-danger" value="Limpar" />
+            </div>
+        </div>
+    </form>
+
+    <!-- Modal Facebook -->
+    <div class="modal fade" id="ModalFacebook" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel1"><i class="fa fa-facebook-square"></i>&nbsp;&nbsp;Perfil Facebook</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-3 left">
+                        <img src="../Archives/img/perfil.jpg" alt="Perfil Facebook - Lucas Vinicius" class="img-circle">
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-8 left-bar">
+                            <b>Perfil: </b>
+                            <a href="https://www.facebook.com/lucas.vinicius.39982631" target="_blank">www.facebook.com/lucas vinicius</a>
+                        </div>
+                        <div class="col-md-8 left-bar" >
+                            <b>Nome: </b>
+                            <span>Lucas Vinicius Pereria</span>
+                        </div>
+                        <div class="col-md-8 left-bar" >
+                            <b>Idade: </b>
+                            <span id="setIdade"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- Facebook -->
+
+    <!-- Modal Twitter -->
+    <div class="modal fade" id="ModalTwitter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-twitter-square"></i>&nbsp;&nbsp;Twitter</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-3 left">
+                        <img src="../Archives/img/rs-twitter.png" alt="Perfil Twitter - Lucas Vinicius" class="img-circle">
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-8 left-bar">
+                            <b>Perfil: </b>
+                            <a href="#">Perfil ainda não foi criado.</a>
+                        </div>
+                        <div class="col-md-8 left-bar" >
+                            <b>Nome: </b>
+                            <span>Lucas Vinicius Pereria</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- Twitter -->
+
+    <!-- Modal Skype -->
+    <div class="modal fade" id="ModalSkype" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel3"><i class="fa fa-skype"></i>&nbsp;&nbsp;Skype</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-3 left">
+                        <img src="../Archives/img/rs-skype.png" alt="Perfil Skype - Lucas Vinicius" class="img-circle">
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-8 left-bar">
+                            <b>Perfil: </b>
+                            <a href="#">Perfil ainda não foi criado.</a>
+                        </div>
+                        <div class="col-md-8 left-bar" >
+                            <b>Nome: </b>
+                            <span>Lucas Vinicius Pereria</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- Skype -->
+
+    <!-- Modal Linkedin -->
+    <div class="modal fade" id="ModalLinkedin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel4"><i class="fa fa-linkedin-square"></i>&nbsp;&nbsp;Perfil Linkedin</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-3 left">
+                        <img src="../Archives/img/perfil.jpg" alt="Perfil Linkedin - Lucas Vinicius" class="img-circle">
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-8 left-bar">
+                            <b>Perfil: </b>
+                            <a href="https://www.linkedin.com/in/lucasviniciuspereira" target="_blank" >www.linkedin.com/ lucas vinicius</a>
+                        </div>
+                        <div class="col-md-8 left-bar" >
+                            <b>Nome: </b>
+                            <span>Lucas Vinicius Pereria</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- Linkedin -->
+
+</div><!-- End Container -->
+
+<div id="footer">
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-6 col-sm-6 color-white margin-top-2 map-site">
+                <span class="col-md-3"><strong>Mapa do Site:</strong></span>
+                <a class="link-footer" href="../Curriculo.html"><span class="col-md-2">Currículo</span></a>
+                <a class="link-footer" href="../Portifolio.html"><span class="col-md-2">Portifolio</span></a>
+                <a class="link-footer" href="../Tutoriais.html"><span class="col-md-2">Tutoriais</span></a>
+                <a class="link-footer" href="../Contato.html"><span class="col-md-2">Contato</span></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-6 color-white mid-site">
+                <a data-toggle="modal" data-target="#ModalLinkedin">
+                    <img id="img-linkedin" alt="Linkedin" title="Linkedin" class="img-circle right legenda-top" 
+                    src="../Archives/img/rs-linkedin.png">
+                </a>
+
+                <a data-toggle="modal" data-target="#ModalSkype">
+                    <img id="img-skype" alt="Skype" title="Skype" class="img-circle right margin-right-0 legenda-top" 
+                    src="../Archives/img/rs-skype.png">
+                </a>
+
+                <a data-toggle="modal" data-target="#ModalTwitter">
+                    <img id="img-twitter" alt="Twitter" title="Twitter" class="img-circle right margin-right-0 legenda-top" 
+                    src="../Archives/img/rs-twitter.png">
+                </a>
+
+                <a data-toggle="modal" data-target="#ModalFacebook">
+                    <img id="img-facebook" alt="Facebook" title="Facebook" class="img-circle right margin-right-0 legenda-top" 
+                    src="../Archives/img/rs-facebook.png">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-4 color-white">
+                <span class="bottom">©Copyright 2014 Lucas. Todos direitos reservados.</span>    
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Import scripts end of page -->
+<script type="text/javascript" src="../Archives/scripts/jquery.easing.js" ></script>
+<script type="text/javascript" src="../Archives/scripts/jquery.ui.totop.min.js" ></script>
+<!-- Script of Back to Top -->
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        //Element to back to top
+        $().UItoTop({ 
+            easingType: 'easeOutQuart'
+        }); 
+
+        //Element to Tooltip
+        $(".legenda-bottom").tooltip({
+            placement: 'bottom'
+        });
+
+        //Element to Tooltip
+        $(".legenda-top").tooltip({
+            placement: 'top'
+        });
+    });
+</script>
+
+</body>
+</html>
