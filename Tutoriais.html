@@ -29,7 +29,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
   </head>
-  <body>
+<body onload="SetIdade(); GetPosts();">
 
 <nav class="navbar navbar-inverse navbar-fixed-top nav-custom" role="navigation">
     <div class="container">
@@ -57,52 +57,581 @@
 
 <div class="container padding-top-1">
     <h3>
-        <i class="fa fa-graduation-cap"></i> Tutoriais
+        <i class="fa fa-desktop"></i> Tutoriais <small>Lista de exemplos</small>
     </h3>
     <hr>
     <br />
+    <!-- Total de post -->
+    <div class="row">
+        <div class="col-md-12">
+            <span class="right">Quantidade de post: <strong><i id="lblPosts"></i></strong></span>
+        </div>
+    </div>
 
+    <!--<div class="row">
+        <div class="col-md-12">
+            <h3>Dicas </h3><hr>
+        </div>
+    </div> -->
+    <br>
+        <!-- Left -->
     <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
         <div class="row border border-gray box-margin box-left">
             <div class="col-md-2 box box-blue left color-white center padding-top-3">
-                <span>HTML</span><br><small class="font-small" >08 maio</small>
+                <span>ARTIGO</span><br><small class="font-small" >14 Julho</small>
             </div>
             <div class="col-md-10 padding-top-5">
-                <span class="margin-left-0"><a href="">a container with a flat base and sides</a></span>
+                <span class="margin-left-0">
+                    <a target="_blank" href="http://tableless.com.br/iniciando-no-git-parte-1/#.UsgUdfRDtXc">
+                    <b>Git</b>
+                        Entenda o que é</a></span>
             </div>
         </div>
     </div>
-
+    <!-- Right -->
     <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
         <div class="row border border-gray box-margin box-right">
             <div class="col-md-2 box box-black left color-white center padding-top-3">
-                <span>HTML</span><br><small class="font-small" >08 maio</small>
+                <span>ARTIGO</span><br><small class="font-small" >14 Julho</small>
             </div>
             <div class="col-md-10 padding-top-5">
-                <span class="margin-left-0"><a href="">a container with a flat base and sides</a></span>
+                <span class="margin-left-0">
+                <a target="_blank"
+                href="http://www.devmedia.com.br/gerenciamento-de-banco-de-dados-analise-comparativa-de-sgbds/30788">
+                <b>SGBD’S</b> O que é ? Como Funciona?
+                </a></span>
             </div>
         </div>
     </div>
-
+     <!-- Left -->
     <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
         <div class="row border border-gray box-margin box-left">
             <div class="col-md-2 box box-blue left color-white center padding-top-3">
-                <span>HTML</span><br><small class="font-small" >08 maio</small>
+                <span>Node</span><br><small class="font-small" >13 Julho</small>
             </div>
             <div class="col-md-10 padding-top-5">
-                <span class="margin-left-0"><a href="">a container with a flat base and sides</a></span>
+                <span class="margin-left-0">
+                    <a target="_blank"  href="http://nodebr.com/tags/">
+                    <b>Node</b>
+                        O'que é node?</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Right -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-right">
+            <div class="col-md-2 box box-black left color-white center padding-top-3">
+                <span>ARTIGO</span><br><small class="font-small" >13 Julho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                <a target="_blank"
+                href="http://www.kazale.com/bower-o-que-e/">
+                <b>BOWER</b> Conheça e aprenda utilizar
+                </a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Left -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-left">
+            <div class="col-md-2 box box-blue left color-white center padding-top-3">
+                <span>JQUERY</span><br><small class="font-small" >12 Julho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                    <a target="_blank"  href="http://desandro.github.io/masonry/">
+                    <b>Masonry</b>
+                        Criação de páginas e efeitos</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Right -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-right">
+            <div class="col-md-2 box box-black left color-white center padding-top-3">
+                <span>MVC</span><br><small class="font-small" >12 Julho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                <a target="_blank"
+                href="http://www.princiweb.com.br/blog/programacao/design-patterns/conheca-o-padrao-view-model-e-aprenda-a-utiliza-lo-em-um-projeto-aspnet-mvc-csharp.html">
+                <b>MVC</b> Conheça o padrão View Model
+                </a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Left -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-left">
+            <div class="col-md-2 box box-blue left color-white center padding-top-3">
+                <span>ARTIGO</span><br><small class="font-small" >12 Julho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                    <a target="_blank"  href="http://www.princiweb.com.br/blog/programacao/tdd/tdd-ddd-e-bdd-praticas-de-desenvolvimento.html">
+                    <b>TDD, DDD e BDD</b>
+                        Práticas de desenvolvimento</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Right -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-right">
+            <div class="col-md-2 box box-black left color-white center padding-top-3">
+                <span>ARTIGO</span><br><small class="font-small" >12 Julho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                <a target="_blank"
+                href="http://www.princiweb.com.br/blog/front-end/ferramentas/otimizando-a-perfomance-do-seu-site-com-o-grunt.html">
+                <b>Grunt</b> Otimizando a perfomance do seu site
+                </a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Left -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-left">
+            <div class="col-md-2 box box-blue left color-white center padding-top-3">
+                <span>CSS</span><br><small class="font-small" >12 Julho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                    <a target="_blank"  href="https://pattle.github.io/simpsons-in-css/">
+                    <b>CSS</b>
+                    The Simpsons</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Right -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-right">
+            <div class="col-md-2 box box-black left color-white center padding-top-3">
+                <span>CSS</span><br><small class="font-small" >12 Julho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                <a target="_blank" href="http://www.css3shapes.com/">
+                <b>CSS</b> Formas geograficas
+                </a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Left -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-left">
+            <div class="col-md-2 box box-blue left color-white center padding-top-3">
+                <span>HTML5</span><br><small class="font-small" >10 Julho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                    <a target="_blank"  href="http://html5please.com/">
+                    <b>HTML5</b>
+                    Tabelas de Tags</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Right -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-right">
+            <div class="col-md-2 box box-black left color-white center padding-top-3">
+                <span>JQUERY</span><br><small class="font-small" >9 Julho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                <a target="_blank" href="http://www.jqueryrain.com/">
+                <b>JQUERY</b> Novidades e tutoriais
+                </a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Left -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-left">
+            <div class="col-md-2 box box-blue left color-white center padding-top-3">
+                <span>LESS</span><br><small class="font-small" >5 Julho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                    <a target="_blank"  href="http://lesscss.org/#-client-side-usage">
+                    <b>LESS</b>
+                    Utilização e implementação</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Right -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-right">
+            <div class="col-md-2 box box-black left color-white center padding-top-3">
+                <span>MVC</span><br><small class="font-small" >1 Julho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                <a target="_blank" href="http://www.princiweb.com.br/blog/programacao/aspnet/desvendando-o-mvc.html">
+                <b>MVC</b> Desvendando o MVC
+                </a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Left -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-left">
+            <div class="col-md-2 box box-blue left color-white center padding-top-3">
+                <span>POO</span><br><small class="font-small" >29 Junho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                    <a target="_blank"  href="http://www.macoratti.net/11/05/oop_cph1.htm">
+                    <b>POO</b>
+                    Herança x Composição</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Right -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-right">
+            <div class="col-md-2 box box-black left color-white center padding-top-3">
+                <span>POO</span><br><small class="font-small" >27 Junho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                <a target="_blank" href="http://pt.scribd.com/doc/56076948/Boas-Praticas-de-Desenvolvimento-em-Linguagem-Orientada-a-Objeto">
+                <b>POO</b> Boas Praticas de Desenvolvimento
+                </a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Left -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-left">
+            <div class="col-md-2 box box-blue left color-white center padding-top-3">
+                <span>.NET</span><br><small class="font-small" >25 Junho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                    <a target="_blank"  href="http://programandodotnet.wordpress.com/">
+                    <b>Programador.NET</b>
+                    Tutoriais e implementações</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Right -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-right">
+            <div class="col-md-2 box box-black left color-white center padding-top-3">
+                <span>ARTIGO</span><br><small class="font-small" >20 Junho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                <a target="_blank" href="http://www.princiweb.com.br/blog/programacao/design-patterns/o-que-sao-design-patterns.html">
+                <b>DESIGN PATTERNS</b> Explicando e suas utilizações
+                </a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Left -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-left">
+            <div class="col-md-2 box box-blue left color-white center padding-top-3">
+                <span>REF.</span><br><small class="font-small" >2 Junho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                    <a target="_blank" href="http://www.codecademy.com/"><b>Codecademy</b> Ferramenta didática para iniciantes.</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Right -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-right">
+            <div class="col-md-2 box box-black left color-white center padding-top-3">
+                <span>CSS</span><br><small class="font-small" >04 maio</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                    <a target="_blank" href="http://css-tricks.com/"><b>CSS Tricks</b> Truques utilizando CSS</a></span>
+            </div>
+        </div>
+    </div>
+     <!-- Left -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-left">
+            <div class="col-md-2 box box-blue left color-white center padding-top-3">
+                <span>CSS</span><br><small class="font-small" >12 Abril</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0"><a target="_blank" href="http://revistaw.com.br/galeria/animacoes-em-css/"><b>Revistaw</b> Aplicações desenvolvidas em CSS</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Right -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-right">
+            <div class="col-md-2 box box-black left color-white center padding-top-3">
+                <span>ARTIGO</span><br><small class="font-small" >10 Abril</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0"><a target="_blank" href="http://tableless.com.br/16-ferramentas-para-designers-e-desenvolvedores/#.UsoCwfRDuuN">
+                <b>Tableless</b> 16 Ferramentas para desenvolvedores
+                </a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Left -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-left">
+            <div class="col-md-2 box box-blue left color-white center padding-top-3">
+                <span>REF.</span><br><small class="font-small" >27 Março</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0"><a target="_blank" href="http://www.microsoftvirtualacademy.com/#?fbid=c6yt0Iw-3MZ"><b>Microsoft</b>
+                 Guia de estudos e Certificações Microsoft</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Right -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-right">
+            <div class="col-md-2 box box-black left color-white center padding-top-3">
+                <span>ARTIGO</span><br><small class="font-small" >20 Março</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                <a target="_blank" href="http://tableless.com.br/tornar-dev-front-end/#.UsgRl_RDtXc">
+                <b>Tableless</b> Guia de programação front-end
+                </a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Left -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-left">
+            <div class="col-md-2 box box-blue left color-white center padding-top-3">
+                <span>ARTIGO</span><br><small class="font-small" >27 Março</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                    <a target="_blank"  href="http://www.midiatismo.com.br/o-mobile/design-responsivo-entenda-o-que-e-a-tecnica-e-como-ela-funciona">
+                    <b>Midiatismo</b>
+                     Técnica de design responsivo</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Right -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-right">
+            <div class="col-md-2 box box-black left color-white center padding-top-3">
+                <span>ARTIGO</span><br><small class="font-small" >1 Março</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                <a target="_blank" href="http://www.gayadesign.com/">
+                <b>Gayadesign</b> Auxilio para desenvolvimentos front-end
+                </a></span>
+            </div>
+        </div>
+    </div>
+     <!-- Left -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-left">
+            <div class="col-md-2 box box-blue left color-white center padding-top-3">
+                <span>REF.</span><br><small class="font-small" >25 Fev</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                    <a target="_blank"  href="http://tableless.com.br/">
+                    <b>Tableless</b>
+                     Site de referência para o profissional de TI</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Right -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-right">
+            <div class="col-md-2 box box-black left color-white center padding-top-3">
+                <span>SEO</span><br><small class="font-small" >5 Fev</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                <a target="_blank" href="http://tableless.com.br/como-escrever-bem-para-o-seo-texto-e-contexto-da-palavra-chave-semantica/#.UsdaWfRDtXc">
+                <b>Tableless</b> Técnicas SEO para desenvolvimento WEB
+                </a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Left -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-left">
+            <div class="col-md-2 box box-blue left color-white center padding-top-3">
+                <span>PHP</span><br><small class="font-small" >2 Fev</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                    <a target="_blank"  href="http://idealgratis.com/curso/curso-de-php/">
+                    <b>PHP</b>
+                     Curso de php online</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Right -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-right">
+            <div class="col-md-2 box box-black left color-white center padding-top-3">
+                <span>PHP</span><br><small class="font-small" >1 Fev</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                <a target="_blank" href="http://blog.clares.com.br/ler-xml-com-php/">
+                <b>PHP</b> : Lendo informações XML com php
+                </a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Left -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-left">
+            <div class="col-md-2 box box-blue left color-white center padding-top-3">
+                <span>REF.</span><br><small class="font-small" >25 jan</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                    <a target="_blank"  href="http://www.devmedia.com.br/">
+                    <b>DevMedia</b>
+                     Cursos e tutoriais WEB</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Right -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-right">
+            <div class="col-md-2 box box-black left color-white center padding-top-3">
+                <span>ARTIGO</span><br><small class="font-small" >24 Jan</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                <a target="_blank" href="http://www.comocriarmeusite.com.br/wordpress-2/">
+                <b>WordPress</b> Criação de aplicativos em WordPress
+                </a></span>
+            </div>
+        </div>
+    </div>
+      <!-- Left -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-left">
+            <div class="col-md-2 box box-blue left color-white center padding-top-3">
+                <span>REF.</span><br><small class="font-small" >20 jan</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                    <a target="_blank"  href="http://design.appmachine.com/login">
+                    <b>AppMachine</b>
+                     Criação de apps para android</a></span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Linha para separar os topicos -->
+    <div class="row">
+        <div class="col-md-12">
+        </div>
+    </div>
+     <!-- Tutorial part Framawork -->
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Frameworks </h3><hr>
+        </div>
+    </div>
+    <br>
+
+    <!-- Left -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-left">
+            <div class="col-md-2 box box-blue left color-white center padding-top-3">
+                <span>WEB</span><br><small class="font-small" >12 Julho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                    <a target="_blank"  href="http://getbootstrap.com/">
+                    <b>Bootstrap</b>
+                      Framework para desenvolvimento</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Right -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-right">
+            <div class="col-md-2 box box-black left color-white center padding-top-3">
+                <span>WEB</span><br><small class="font-small" >11 Julho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                <a target="_blank" href="http://foundation.zurb.com/">
+                <b>Foundation</b> Framework para desenvolvimento
+                </a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Left -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-left">
+            <div class="col-md-2 box box-blue left color-white center padding-top-3">
+                <span>WEB</span><br><small class="font-small" >10 Julho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                    <a target="_blank"  href="http://www.getskeleton.com/">
+                    <b>Skeleton</b>
+                    Framework para desenvolvimento</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Right -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-right">
+            <div class="col-md-2 box box-black left color-white center padding-top-3">
+                <span>WEB</span><br><small class="font-small" >8 Julho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                <a target="_blank" href="http://www.initializr.com/">
+                <b>Initializr</b>  Framework que auxilia no desenvolvimento
+                </a></span>
+            </div>
+        </div>
+    </div>
+     <!-- Left -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-left">
+            <div class="col-md-2 box box-blue left color-white center padding-top-3">
+                <span>WEB</span><br><small class="font-small" >6 Julho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                    <a target="_blank"  href="http://semantic-ui.com/">
+                    <b>Semantic</b>
+                     Framework para desenvolvimento</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Right -->
+    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
+        <div class="row border border-gray box-margin box-right">
+            <div class="col-md-2 box box-black left color-white center padding-top-3">
+                <span>WEB</span><br><small class="font-small" >4 Julho</small>
+            </div>
+            <div class="col-md-10 padding-top-5">
+                <span class="margin-left-0">
+                <a target="_blank" href="http://fluidbaselinegrid.com/">
+                <b>Fluidbaselinegrid</b> Framework para desenvolvimento
+                </a></span>
             </div>
         </div>
     </div>
 
-    <div class="col-md-6 col-xs-12 col-sm-12 margin-top-4">
-        <div class="row border border-gray box-margin box-right">
-            <div class="col-md-2 box box-black left color-white center padding-top-3">
-                <span>HTML</span><br><small class="font-small" >08 maio</small>
-            </div>
-            <div class="col-md-10 padding-top-5">
-                <span class="margin-left-0"><a href="">a container with a flat base and sides</a></span>
-            </div>
+     <!-- Linha para separar o footer -->
+    <div class="row ">
+        <div class="col-md-12 margin-top-1">
         </div>
     </div>
 

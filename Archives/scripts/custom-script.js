@@ -67,11 +67,11 @@ function SetCumprimento()
 	var exibe = "";
 
 	if(horas > 0 && horas <= 11)
-		exibe = "Bom dia";
+		exibe = "Bom dia, ";
 	else if (horas > 11 && horas <= 18)
-		exibe = "Boa tarde";
+		exibe = "Boa tarde, ";
 	else
-		exibe = "Boa noite";
+		exibe = "Boa noite, ";
 
 	document.getElementById("cumprimento").innerHTML = exibe;
 
@@ -151,4 +151,11 @@ function SetMessage()
 	}
 
 	document.getElementById("message").innerHTML = message;
+}
+
+function GetPosts()
+{
+ var qtd = $(".box").length;
+
+ document.getElementById("lblPosts").innerHTML = qtd;
 }
